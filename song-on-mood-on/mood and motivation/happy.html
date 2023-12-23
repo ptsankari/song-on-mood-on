@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>happy</title>
+</head>
+<style>
+    h3{
+        font-family:'Poppins', sans-serif;
+        font-size: 30px; 
+        text-decoration: none;
+    }
+
+    h4{
+        font-family:'Poppins', sans-serif;
+        font-size: 25px; 
+        margin-left: 30px;
+    }
+
+    #box{
+        width:max-content;
+        background-color: #dacdf4; 
+        border:none;
+       margin-bottom: 90px;
+        float:left;
+
+    }
+    #box2{
+        width:max-content;
+        margin-top: 90px;
+        background-color: #dacdf4; 
+        
+        border:none;
+        text-align: center;
+
+    }
+
+    #box3{
+        width:max-content;
+        background-color: #dacdf4; 
+        border:none;
+
+        float: right;
+
+    }
+
+    #song1{
+        background-color: #dacdf4;
+        width:450px;
+        height:200px;
+        margin-left: 30px;
+    }
+
+
+    #song2{
+        background-color: #dacdf4;
+        width:500px;
+        height:200px;
+        margin-left: 30px;
+    }
+
+    #song3{
+        background-color: #dacdf4;
+        width:450px;
+        height:200px;
+        margin-left: 30px;
+      
+    }
+li{
+    text-decoration: none;
+    list-style:none;
+    color: black;
+}
+
+    #action{
+        background-color: #dacdf4;
+        color: black;
+        border-radius: 15px;
+        width: 300px;
+        border: solid;
+        border-color: #dacdf4;
+    }
+
+p{
+    font-family:'Poppins', sans-serif;
+}
+</style>
+<body>
+    <br><br>
+    
+  <!-- <div id ="box">
+        <h3>You deserve to be happy!</h3>
+    </div>
+    <br><br>
+<center>
+    <div id="box2">
+        <h3>Look at you all lively <br>and cute >u< </h3>
+    </div>
+    </center>
+<br><br>
+    <div id="box3">
+        <h3>I'm glad that you are doing well in life!<br>you are a star, keep shining</h3>
+    </div>
+-->
+<br><br>
+    <h4 style="margin-top: 90px;">Here are some songs to listen based on your mode:</h4>
+    <center>
+        
+<div id="main" style="display: -webkit-inline-box;">
+
+    <a href="https://www.youtube.com/watch?v=MysKegBRtaA">
+    <div id="song1" style="display:-webkit-inline-box;">
+        <img src="song1.jpg" style="width:200px">
+        <ul>
+            <li style="font-family:'Poppins', sans-serif;
+            font-size: 24px;text-decoration: none;">Lush life</li>
+            <li style="font-family:'Poppins', sans-serif;
+            font-size: 15px; ">Zara Larsson</li>
+        </ul>
+    </div>
+</a>
+
+      <a href="https://www.youtube.com/watch?v=o8RkbHv2_a0"> 
+    <div id="song1" style="display:-webkit-inline-box;">
+        <img src="song2.jpg" style="width:200px">
+        <ul>
+            <li style="font-family:'Poppins', sans-serif;
+            font-size: 24px;">Attention</li>
+            <li style="font-family:'Poppins', sans-serif;
+            font-size: 15px; ">New Jeans</li>
+        </ul>    
+    </div>
+    </a>
+
+<a href="https://www.youtube.com/watch?v=uAYG46w1SCA">
+    <div id="song3" style="display:-webkit-inline-box;">
+        <img src="song3.jpg" style="width:200px">
+        <ul>
+            <li style="font-family:'Poppins', sans-serif;
+            font-size: 24px;">Say So</li>
+            <li style="font-family:'Poppins', sans-serif;
+            font-size: 15px; ">Doja Cat</li>
+        </ul>  
+    </div>
+    </a>
+
+    </div>
+</center>
+
+    <h4>Or try out random ones</h4>
+   <center>
+<button onclick="generate()" id="action"><h3 style="font-family:'Poppins', sans-serif;
+    font-size: 25px;">Click me for random songs</h3></button>
+    <br>
+
+    <p>Check it out!</p>
+    <br>
+    <p id="ans"></p>
+</center>
+
+
+
+
+    <script>
+const links=['https://www.youtube.com/watch?v=50-_oTkmF5I&t=129s',
+'https://www.youtube.com/watch?v=CY8E6N5Nzec',
+'https://www.youtube.com/watch?v=W3Cky5s5E94',
+];
+    function generate(){
+
+        const indexnum=Math.floor(Math.random()*links.length);
+        const ranlink=links[indexnum];
+        document.getElementById('ans').innerHTML=`<a href="${ranlink}" target="_blank">${ranlink}</a>`
+    }
+        </script>
+</body>
+</html>
