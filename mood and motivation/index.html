@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>mood and motivation</title>
+</head>
+<style>
+    h2{
+        font-family:'Poppins', sans-serif;
+        font-size: 50px;
+        margin-top: 200px;
+    }
+    .but1{
+       background-color: #dacdf4; 
+       width:120px;
+       height: 60px;
+       border:none;
+       margin-left: 20px;
+       font-family:'Poppins', sans-serif;
+       font-size:20px;
+       margin-top: 30px;
+    }
+    .but2{
+       background-color: #dacdf4; 
+       width:120px;
+       height: 60px;
+       border:none;
+       margin-left: 20px;
+       font-family:'Poppins', sans-serif;
+       font-size:20px;
+       margin-top: 30px;
+    }
+    .but3{
+       background-color: #dacdf4; 
+       width:120px;
+       height: 60px;
+       border:none;
+       margin-left: 20px;
+       font-family:'Poppins', sans-serif;
+       font-size:20px;
+       margin-top: 30px;
+    }
+    .but4{
+       background-color: #dacdf4; 
+       width:120px;
+       height: 60px;
+       border:none;
+       margin-left: 20px;
+       font-family:'Poppins', sans-serif;
+       font-size:20px;
+       margin-top: 30px;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+    }
+
+.but1::before{
+  content: url('happy.jpg');
+  position: absolute;
+  visibility: hidden;
+  opacity:0;
+  margin-top: 100px;
+  margin-left: 140px;
+}
+
+
+.but1:hover::before{
+  visibility: visible;
+  opacity: 1;
+}
+
+.but2:hover::before{
+  visibility: visible;
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+}
+</style>
+<body style="background-color: #eef7fb;">
+  <center><h2>Hey! How are you feeling today?</h2></center>  
+
+<center>
+  <div id="main_block">
+    <button class="but1"><a href="happy.html">Happy</a></button>
+    <button class="but2">Tired</button>
+    <button class="but3">Sad</button>
+    <button class="but4">Bored</button>
+    
+  </div>
+  </center>
+</body>
+</html>
